@@ -1,0 +1,59 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pkl
+*.db
+*.sqlite3
+
+# Environment
+.env
+.venv/
+venv/
+ENV/
+env/
+
+# Jupyter
+.ipynb_checkpoints
+
+# VSCode / IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+logs/
+
+# Cache
+*.DS_Store
+Thumbs.db
+*.egg-info/
+.cache/
+dist/
+build/
+
+# Backend dataset & index
+backend/products.index
+backend/products.json
+backend/products_*.json
+
+# Node / Frontend
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Frontend build output (Vercel/Netlify will build)
+dist/
+build/
+.out/
+
+# Misc
+*.swp
+
+
+# Large files
+backend/products.json
+backend/products.index
