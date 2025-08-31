@@ -357,12 +357,14 @@
               fd.append("min_price", String(priceRange[0]));
               fd.append("max_price", String(priceRange[1]));
             }
-            
             const endpoint = searchMode === "image" ? "match" : "search_text";
-const res = await fetch(`${api.replace(/\/$/, "")}/${endpoint}`, {
+const url = `${api.replace(/\/$/, "")}/${endpoint}`;
+const res = await fetch(url, {
   method: "POST",
   body: fd,
 });
+
+            
 
             if (!res.ok) {
               throw new Error(
